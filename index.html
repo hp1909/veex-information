@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veex - App Support</title>
+    <meta name="description" content="Support information and help for Veex app by Nguyen Hoang Phuc">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Veex</h1>
+            <p class="tagline">App Support</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Welcome to Veex Support</h2>
+            <p>Get help and find answers to your questions about using Veex.</p>
+        </section>
+
+        <section class="support-sections">
+            <div class="support-card">
+                <h3>Frequently Asked Questions</h3>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        How do I get started with Veex?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Download Veex from the App Store and follow the onboarding process to set up your account and preferences.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        How can I reset my password?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Go to the login screen and tap "Forgot Password". Enter your email address and follow the instructions sent to your email.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Is my data secure?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we take data security seriously. All data is encrypted and stored securely following industry best practices.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="support-card">
+                <h3>Contact Support</h3>
+                <p>Need additional help? We're here to assist you.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <a href="mailto:hoangphuc1909@live.com">hoangphuc1909@live.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Response Time:</strong>
+                        <span>Within 24 hours</span>
+                    </div>
+                </div>
+                <form class="contact-form" onsubmit="submitForm(event)">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Describe your issue or question" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <div class="support-card">
+                <h3>App Information</h3>
+                <div class="app-info">
+                    <p><strong>App Name:</strong> Veex</p>
+                    <p><strong>Developer:</strong> Nguyen Hoang Phuc</p>
+                    <p><strong>Version:</strong> Latest available on App Store</p>
+                    <p><strong>Compatibility:</strong> iOS 13.0 or later</p>
+                </div>
+            </div>
+
+            <div class="support-card">
+                <h3>Privacy & Terms</h3>
+                <p>Your privacy is important to us. We are committed to protecting your personal information.</p>
+                <div class="links">
+                    <a href="#privacy" onclick="showModal('privacy')">Privacy Policy</a>
+                    <a href="#terms" onclick="showModal('terms')">Terms of Service</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nguyen Hoang Phuc. All rights reserved.</p>
+            <p>Veex App Support</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="privacy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('privacy')">&times;</span>
+            <h3>Privacy Policy</h3>
+            <p>We respect your privacy and are committed to protecting your personal data. This privacy policy explains how we collect, use, and protect your information when you use Veex.</p>
+            <p><strong>Information We Collect:</strong> We may collect information you provide directly to us and information about how you use our app.</p>
+            <p><strong>How We Use Information:</strong> We use the information to provide, maintain, and improve our services.</p>
+            <p><strong>Data Security:</strong> We implement appropriate security measures to protect your personal information.</p>
+        </div>
+    </div>
+
+    <div id="terms-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('terms')">&times;</span>
+            <h3>Terms of Service</h3>
+            <p>By using Veex, you agree to these terms of service.</p>
+            <p><strong>Use License:</strong> Permission is granted to use this app for personal, non-commercial purposes.</p>
+            <p><strong>User Responsibilities:</strong> You are responsible for maintaining the confidentiality of your account.</p>
+            <p><strong>Prohibited Uses:</strong> You may not use our app for any unlawful purpose or to solicit others to perform unlawful acts.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
