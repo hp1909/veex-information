@@ -3,22 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veex - App Support</title>
-    <meta name="description" content="Support information and help for Veex app by Nguyen Hoang Phuc">
+    <title>Veex - Minimal Expense Tracker Support</title>
+    <meta name="description" content="Support for Veex - A minimal, clean expense tracker app. Track your expenses simply and beautifully.">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Veex</h1>
-            <p class="tagline">App Support</p>
+            <div class="header-content">
+                <div class="logo-section">
+                    <h1>Veex</h1>
+                    <p class="tagline">Minimal Expense Tracker</p>
+                </div>
+                <div class="app-badge">
+                    <span class="badge">Available on App Store</span>
+                </div>
+            </div>
         </div>
     </header>
 
     <main class="container">
         <section class="hero">
-            <h2>Welcome to Veex Support</h2>
-            <p>Get help and find answers to your questions about using Veex.</p>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Simple. Clean. Quick.</h2>
+                    <p class="hero-description">Track your expenses with minimal effort. Veex brings simplicity to personal finance management with an intuitive, beautiful interface.</p>
+                    <div class="hero-features">
+                        <div class="feature-pill">📊 Category Insights</div>
+                        <div class="feature-pill">⚡ Quick Entry</div>
+                        <div class="feature-pill">🎯 Monthly Summaries</div>
+                    </div>
+                </div>
+                <div class="hero-screenshots">
+                    <div class="phone-mockup phone-1">
+                        <img src="resources/screenshot_1.png" alt="Veex main expenses view" loading="lazy">
+                    </div>
+                    <div class="phone-mockup phone-2">
+                        <img src="resources/screenshot_2.png" alt="Veex summary and categories" loading="lazy">
+                    </div>
+                    <div class="phone-mockup phone-3">
+                        <img src="resources/screenshot_3.png" alt="Veex add expense form" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-showcase">
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📝</div>
+                    <h3>Easy Expense Entry</h3>
+                    <p>Add expenses in seconds with our streamlined interface. Select categories with visual icons and set amounts quickly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Visual Categories</h3>
+                    <p>Organize expenses with color-coded categories including Food, Transport, Shopping, Education, Entertainment, and more.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Monthly Insights</h3>
+                    <p>Get clear monthly summaries with percentage breakdowns to understand your spending patterns at a glance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Minimal Design</h3>
+                    <p>Clean, distraction-free interface that focuses on what matters - tracking your expenses without complexity.</p>
+                </div>
+            </div>
         </section>
 
         <section class="support-sections">
@@ -26,29 +81,56 @@
                 <h3>Frequently Asked Questions</h3>
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        How do I get started with Veex?
+                        How do I add my first expense in Veex?
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Download Veex from the App Store and follow the onboarding process to set up your account and preferences.</p>
+                        <p>Tap the blue "+" button at the bottom of the screen, enter the amount, select a category (Food, Transport, Shopping, etc.), and optionally add notes. It's that simple!</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        How can I reset my password?
+                        Can I create custom expense categories?
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Go to the login screen and tap "Forgot Password". Enter your email address and follow the instructions sent to your email.</p>
+                        <p>Veex comes with pre-defined categories including Food, Transport, Shopping, Entertainment, Education, Health, and Utilities. There's also an "Other" category for miscellaneous expenses.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        Is my data secure?
+                        How do I view my spending summary?
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes, we take data security seriously. All data is encrypted and stored securely following industry best practices.</p>
+                        <p>Navigate to the Summary tab to see your monthly total, number of expenses, and a breakdown by category with percentages. This gives you clear insights into your spending patterns.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Can I edit or delete expenses after adding them?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Tap on any expense in your list to edit the amount, category, date, or notes. You can also delete expenses if needed.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Is my financial data secure and private?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. Veex stores all data locally on your device by default. Your financial information never leaves your phone unless you choose to backup to iCloud, which is encrypted end-to-end.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Does Veex support multiple currencies?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Veex automatically uses your device's currency settings. You can track expenses in any currency, and the app will display amounts with the appropriate currency symbol.</p>
                     </div>
                 </div>
             </div>
@@ -77,10 +159,13 @@
             <div class="support-card">
                 <h3>App Information</h3>
                 <div class="app-info">
-                    <p><strong>App Name:</strong> Veex</p>
+                    <p><strong>App Name:</strong> Veex - Minimal Expense Tracker</p>
                     <p><strong>Developer:</strong> Nguyen Hoang Phuc</p>
+                    <p><strong>Category:</strong> Finance & Personal Budget</p>
                     <p><strong>Version:</strong> Latest available on App Store</p>
-                    <p><strong>Compatibility:</strong> iOS 13.0 or later</p>
+                    <p><strong>Compatibility:</strong> iOS 15.0 or later</p>
+                    <p><strong>Languages:</strong> English</p>
+                    <p><strong>Price:</strong> Free</p>
                 </div>
             </div>
 
@@ -97,8 +182,8 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Nguyen Hoang Phuc. All rights reserved.</p>
-            <p>Veex App Support</p>
+            <p>&copy; 2025 Nguyen Hoang Phuc. All rights reserved.</p>
+            <p>Veex - Minimal Expense Tracker Support</p>
         </div>
     </footer>
 
@@ -107,10 +192,11 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal('privacy')">&times;</span>
             <h3>Privacy Policy</h3>
-            <p>We respect your privacy and are committed to protecting your personal data. This privacy policy explains how we collect, use, and protect your information when you use Veex.</p>
-            <p><strong>Information We Collect:</strong> We may collect information you provide directly to us and information about how you use our app.</p>
-            <p><strong>How We Use Information:</strong> We use the information to provide, maintain, and improve our services.</p>
-            <p><strong>Data Security:</strong> We implement appropriate security measures to protect your personal information.</p>
+            <p>We respect your privacy and are committed to protecting your personal financial data. This privacy policy explains how Veex handles your information.</p>
+            <p><strong>Local Data Storage:</strong> Veex stores all your expense data locally on your device. Your financial information never leaves your phone unless you choose to backup to iCloud.</p>
+            <p><strong>iCloud Backup:</strong> If you enable iCloud backup, your data is encrypted end-to-end and stored securely in your personal iCloud account.</p>
+            <p><strong>No Data Collection:</strong> We do not collect, analyze, or share your personal expense data. Your financial information remains completely private.</p>
+            <p><strong>Analytics:</strong> We may collect anonymous usage statistics to improve the app, but this never includes your actual expense data or personal information.</p>
         </div>
     </div>
 
@@ -118,10 +204,12 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal('terms')">&times;</span>
             <h3>Terms of Service</h3>
-            <p>By using Veex, you agree to these terms of service.</p>
-            <p><strong>Use License:</strong> Permission is granted to use this app for personal, non-commercial purposes.</p>
-            <p><strong>User Responsibilities:</strong> You are responsible for maintaining the confidentiality of your account.</p>
-            <p><strong>Prohibited Uses:</strong> You may not use our app for any unlawful purpose or to solicit others to perform unlawful acts.</p>
+            <p>By downloading and using Veex - Minimal Expense Tracker, you agree to these terms of service.</p>
+            <p><strong>Use License:</strong> Veex is licensed for personal expense tracking purposes. You may use the app to track your personal finances and expenses.</p>
+            <p><strong>User Responsibilities:</strong> You are responsible for the accuracy of the expense data you enter and for keeping your device secure.</p>
+            <p><strong>App Purpose:</strong> Veex is designed solely for personal expense tracking and budgeting. It is not financial advice or a professional accounting tool.</p>
+            <p><strong>Data Backup:</strong> While we strive for reliability, you should regularly backup your data through iCloud or other methods to prevent data loss.</p>
+            <p><strong>Updates:</strong> We may update the app periodically to improve functionality and security. Some updates may require iOS version upgrades.</p>
         </div>
     </div>
 
