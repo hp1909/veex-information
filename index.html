@@ -8,77 +8,139 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo-section">
-                    <h1>Veex</h1>
-                    <p class="tagline">Minimal Expense Tracker</p>
-                </div>
-                <div class="app-badge">
-                    <span class="badge">Available on App Store</span>
-                </div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="logo">Veex</span>
+                <span class="logo-subtitle">Support</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+                <a href="#" class="nav-cta">Download</a>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <main class="container">
+    <main>
         <section class="hero">
-            <div class="hero-content">
-                <div class="hero-text">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text-center">
+                        <h1 class="hero-title">A minimal expense tracker for iOS that actually works</h1>
+                        <p class="hero-description">Track expenses effortlessly with visual categories, instant summaries, and a clean interface designed for daily use.</p>
+                        <div class="hero-actions">
+                            <a href="#" class="btn-primary">Get Started</a>
+                            <a href="#features" class="btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="screenshots-section">
+            <div class="container">
+                <div class="section-header">
                     <h2>Simple. Clean. Quick.</h2>
-                    <p class="hero-description">Track your expenses with minimal effort. Veex brings simplicity to personal finance management with an intuitive, beautiful interface.</p>
-                    <div class="hero-features">
-                        <div class="feature-pill">📊 Category Insights</div>
-                        <div class="feature-pill">⚡ Quick Entry</div>
-                        <div class="feature-pill">🎯 Monthly Summaries</div>
-                    </div>
+                    <p>Three core principles that make Veex the perfect expense tracker</p>
                 </div>
-                <div class="hero-screenshots">
-                    <div class="phone-mockup phone-1">
-                        <img src="resources/screenshot_1.png" alt="Veex main expenses view" loading="lazy">
+                <div class="screenshots-grid">
+                    <div class="screenshot-item">
+                        <div class="screenshot-mockup">
+                            <img src="resources/screenshot_1.png" alt="Veex main expenses view">
+                        </div>
+                        <div class="screenshot-info">
+                            <h3>Simple</h3>
+                            <p>Track expenses with an intuitive interface that gets out of your way</p>
+                        </div>
                     </div>
-                    <div class="phone-mockup phone-2">
-                        <img src="resources/screenshot_2.png" alt="Veex summary and categories" loading="lazy">
+                    <div class="screenshot-item">
+                        <div class="screenshot-mockup">
+                            <img src="resources/screenshot_2.png" alt="Veex summary and categories">
+                        </div>
+                        <div class="screenshot-info">
+                            <h3>Clean</h3>
+                            <p>Beautiful summaries and insights with clear visual categories</p>
+                        </div>
                     </div>
-                    <div class="phone-mockup phone-3">
-                        <img src="resources/screenshot_3.png" alt="Veex add expense form" loading="lazy">
+                    <div class="screenshot-item">
+                        <div class="screenshot-mockup">
+                            <img src="resources/screenshot_3.png" alt="Veex add expense form">
+                        </div>
+                        <div class="screenshot-info">
+                            <h3>Quick</h3>
+                            <p>Add expenses in seconds with smart defaults and quick entry</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="features-showcase">
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">📝</div>
-                    <h3>Easy Expense Entry</h3>
-                    <p>Add expenses in seconds with our streamlined interface. Select categories with visual icons and set amounts quickly.</p>
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Built for simplicity</h2>
+                    <p>Everything you need to track expenses, nothing you don't.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>Visual Categories</h3>
-                    <p>Organize expenses with color-coded categories including Food, Transport, Shopping, Education, Entertainment, and more.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📈</div>
-                    <h3>Monthly Insights</h3>
-                    <p>Get clear monthly summaries with percentage breakdowns to understand your spending patterns at a glance.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h3>Minimal Design</h3>
-                    <p>Clean, distraction-free interface that focuses on what matters - tracking your expenses without complexity.</p>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7h20L12 2z"/>
+                                <path d="M2 7v10c0 1 0 2 2 2h16c2 0 2-1 2-2V7"/>
+                            </svg>
+                        </div>
+                        <h3>Quick Entry</h3>
+                        <p>Add expenses in seconds with visual categories and smart defaults.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="9" y1="9" x2="15" y2="15"/>
+                                <line x1="15" y1="9" x2="9" y2="15"/>
+                            </svg>
+                        </div>
+                        <h3>Visual Categories</h3>
+                        <p>Color-coded categories make organizing expenses intuitive and fast.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 3v18h18"/>
+                                <path d="M18 17V9"/>
+                                <path d="M13 17V5"/>
+                                <path d="M8 17v-3"/>
+                            </svg>
+                        </div>
+                        <h3>Smart Insights</h3>
+                        <p>Monthly summaries with percentage breakdowns reveal spending patterns.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                        </div>
+                        <h3>Privacy First</h3>
+                        <p>All data stays on your device. Optional iCloud sync with end-to-end encryption.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="support-sections">
-            <div class="support-card">
-                <h3>Frequently Asked Questions</h3>
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Frequently asked questions</h2>
+                    <p>Everything you need to know about Veex</p>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-content">
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
                         How do I add my first expense in Veex?
@@ -133,57 +195,82 @@
                         <p>Veex automatically uses your device's currency settings. You can track expenses in any currency, and the app will display amounts with the appropriate currency symbol.</p>
                     </div>
                 </div>
-            </div>
-
-            <div class="support-card">
-                <h3>Contact Support</h3>
-                <p>Need additional help? We're here to assist you.</p>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <strong>Email:</strong>
-                        <a href="mailto:hoangphuc1909@live.com">hoangphuc1909@live.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <strong>Response Time:</strong>
-                        <span>Within 24 hours</span>
                     </div>
                 </div>
-                <form class="contact-form" onsubmit="submitForm(event)">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Describe your issue or question" rows="4" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
             </div>
+        </section>
 
-            <div class="support-card">
-                <h3>App Information</h3>
-                <div class="app-info">
-                    <p><strong>App Name:</strong> Veex - Minimal Expense Tracker</p>
-                    <p><strong>Developer:</strong> Nguyen Hoang Phuc</p>
-                    <p><strong>Category:</strong> Finance & Personal Budget</p>
-                    <p><strong>Version:</strong> Latest available on App Store</p>
-                    <p><strong>Compatibility:</strong> iOS 16.0 or later</p>
-                    <p><strong>Languages:</strong> English, Vietnamese, Korean, Chinese, Japanese, Spanish</p>
-                    <p><strong>Price:</strong> Free</p>
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Get help</h2>
+                        <p>Need support with Veex? We're here to help you track your expenses better.</p>
+                        <div class="info-item">
+                            <strong>Email:</strong>
+                            <a href="mailto:hoangphuc1909@live.com">hoangphuc1909@live.com</a>
+                        </div>
+                        <div class="info-item">
+                            <strong>Response time:</strong>
+                            <span>Within 24 hours</span>
+                        </div>
+                    </div>
+                    <form class="contact-form" onsubmit="submitForm(event)">
+                        <input type="text" placeholder="Your name" required>
+                        <input type="email" placeholder="Your email" required>
+                        <textarea placeholder="How can we help?" rows="4" required></textarea>
+                        <button type="submit" class="btn-primary">Send message</button>
+                    </form>
                 </div>
             </div>
+        </section>
 
-            <div class="support-card">
-                <h3>Privacy & Terms</h3>
-                <p>Your privacy is important to us. We are committed to protecting your personal information.</p>
-                <div class="links">
-                    <a href="#privacy" onclick="showModal('privacy')">Privacy Policy</a>
-                    <a href="#terms" onclick="showModal('terms')">Terms of Service</a>
+        <section class="app-info-section">
+            <div class="container">
+                <div class="app-details">
+                    <h3>App Information</h3>
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <span class="label">Developer</span>
+                            <span class="value">Nguyen Hoang Phuc</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Category</span>
+                            <span class="value">Finance & Personal Budget</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Compatibility</span>
+                            <span class="value">iOS 16.0 or later</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Languages</span>
+                            <span class="value">English, Vietnamese, Korean, Chinese, Japanese, Spanish</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Price</span>
+                            <span class="value">Free</span>
+                        </div>
+                    </div>
+                    <div class="legal-links">
+                        <a href="#privacy" onclick="showModal('privacy')">Privacy Policy</a>
+                        <a href="#terms" onclick="showModal('terms')">Terms of Service</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Nguyen Hoang Phuc. All rights reserved.</p>
-            <p>Veex - Minimal Expense Tracker Support</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo">Veex</span>
+                    <p>Minimal expense tracking for iOS</p>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2025 Nguyen Hoang Phuc. All rights reserved.</p>
+                </div>
+            </div>
         </div>
     </footer>
 

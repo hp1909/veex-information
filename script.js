@@ -286,52 +286,9 @@ function initializeFormEnhancements() {
     });
 }
 
-// Lazy Loading for Images
-function initializeLazyLoading() {
-    const images = document.querySelectorAll('img[loading="lazy"]');
-    
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.style.opacity = '0';
-                img.style.transition = 'opacity 0.3s ease';
-                
-                img.onload = () => {
-                    img.style.opacity = '1';
-                };
-                
-                observer.unobserve(img);
-            }
-        });
-    });
-    
-    images.forEach(img => imageObserver.observe(img));
-}
+// Images now load normally without lazy loading
 
-// Enhanced Phone Mockup Interactions
-function initializePhoneMockups() {
-    const phoneMockups = document.querySelectorAll('.phone-mockup');
-    
-    phoneMockups.forEach(mockup => {
-        mockup.addEventListener('mouseenter', function() {
-            this.style.transform += ' scale(1.05)';
-            this.style.zIndex = '10';
-        });
-        
-        mockup.addEventListener('mouseleave', function() {
-            // Reset to original transform
-            if (this.classList.contains('phone-1')) {
-                this.style.transform = 'translateY(-10px) scale(1.02)';
-            } else if (this.classList.contains('phone-2')) {
-                this.style.transform = 'scale(0.95) translateY(20px)';
-            } else if (this.classList.contains('phone-3')) {
-                this.style.transform = 'scale(0.9) translateY(40px)';
-            }
-            this.style.zIndex = '';
-        });
-    });
-}
+// Phone mockup interactions are now handled purely by CSS
 
 // Main Initialization
 document.addEventListener('DOMContentLoaded', function() {
@@ -340,8 +297,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeSmoothScroll();
     initializeHeaderEffect();
     initializeFormEnhancements();
-    initializeLazyLoading();
-    initializePhoneMockups();
     
     // Add animate-in class definition
     const style = document.createElement('style');
@@ -349,10 +304,6 @@ document.addEventListener('DOMContentLoaded', function() {
         .animate-in {
             opacity: 1 !important;
             transform: translateY(0) !important;
-        }
-        
-        .phone-mockup {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
         
         .faq-question {
